@@ -14,13 +14,14 @@
   <nav>
     <ul style="list-style: none; display: flex; gap: 20px; font-weight: 700; padding: 0;">
       <li><a href="/index.html" style="text-decoration: none; color: #000;">Home</a></li>
-      <li><a href="/pages/pages/about.html" style="text-decoration: none; color: #000;">About</a></li>
-      <li><a href="/pages/pages/help.html" style="text-decoration: none; color: #000;">Help</a></li>
+      <li><a href="/pages/about.html" style="text-decoration: none; color: #000;">About</a></li>
+      <li><a href="/pages/help.html" style="text-decoration: none; color: #000;">Help</a></li>
       <li>
         <span style="cursor: pointer;">Modules</span>
         <ul style="list-style: none; padding: 0; margin: 0; display: none; position: absolute; background-color: #f1f1f1; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
-          <li><a href="/pages/modules/module1.html" style="text-decoration: none; color: #000; display: block; padding: 8px 16px;">Module 1</a></li>
-          <li><a href="/pages/modules/module2.html" style="text-decoration: none; color: #000; display: block; padding: 8px 16px;">Module 2</a></li>
+          <li><a href="/pages/modules/module1.html" style="text-decoration: none; color: #000; display: block; padding: 8px 16px;">Module 1: Absolute File Path</a></li>
+          <li><a href="/pages/modules/module2.html" style="text-decoration: none; color: #000; display: block; padding: 8px 16px;">Module 2: Root Relative File Path</a></li>
+          <li><a href="/pages/modules/module3.html" style="text-decoration: none; color: #000; display: block; padding: 8px 16px;">Module 3: Document Relative File Path</a></li>
         </ul>
       </li>
       <li>
@@ -35,9 +36,17 @@
 
   <!-- This section is unique to every page -->
   <main>
-    <h2>Module 1</h2>
+    <h2>Absolute File Paths</h2>
     <div>
-      <p></p>
+      <p>
+        An absolute file path is the full URL to a file or resource. It includes the protocol, domain, and the path to the file. For example, <code>https://www.example.com/images/logo.png</code> is an absolute file path.
+      </p>
+      <p>
+        Generally, you only want to use absolute file paths if you're referencing a file or a resource or a webpage that's on your own website. a link to another website for example
+      </p>
+      <p>
+        You never want to use <u>absolute file paths</u> when referencing files or resources on your own computer. This is because we won't have access to the files on your computer when we view your website.
+      </p>
     </div>
     
   </main>

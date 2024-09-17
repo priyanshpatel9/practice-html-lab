@@ -36,30 +36,52 @@
 
   <!-- This section is unique to every page -->
   <main>
-    <h2>Root Relative File Paths</h2>
+    <h2>Document Relative File Paths</h2>
     <div>
       <p>
-        A root relative file path is a path that starts from the root of the website. It always starts with a forward slash <code>/</code>.
+        Document relative file paths are paths that are relative to the current document. They are the most flexible type of file paths because they allow you to move files around without breaking the links.
       </p>
       <p>
-        For example, <code>/images/logo.png</code> is a root relative file path.
+        For example, if you have a file in a folder called <code>images</code> and you want to link to it from a file in the root of your website, you would use the path <code>./images/logo.png</code>.
       </p>
       <p>
-        Notice that's what I used above in the anchor tags in the navigation menu. This is the best way to reference files and resources on your website.
+        The <code>./</code> at the beginning of the path tells the browser to look for the file in the current directory. If you wanted to link to a file in a folder above the current directory, you would use <code>../</code>.
+      </p>
+      <h3>Example</h3>
+      <img src="/assets/images/sample-website-map.png" alt="Sample Website Map" >
+      <p>
+        <ul>
+          <li>
+            In the example above, if you were in the <code>about.html</code> file and you wanted to link to the <code>help.html</code> file, you would use the path <code>./help.html</code>. Because they're both in the same directory.
+          </li>
+          <li>
+            If you were in the <code>about.html</code> file and you wanted to link to the <code>index.html</code> file, you would use the path <code>../index.html</code>. Because the <code>index.html</code> file is in the directory above the <code>about.html</code> file.
+          </li>
+          <li>
+            If you were in the <code>about.html</code> file and you wanted to link to the <code>module.html</code> file, you would use the path <code>./modules/module1.html</code>. Because the <code>module1.html</code> file is in the <code>assignments</code> directory, which is in the directory that's at the same level as <code>about.html</code> file.
+          </li>
+          <li>
+            If you were in the <code>module1.html</code> and you wanted to link to the <code>index.html</code> file, you would use the path <code>../../index.html</code>. Because the <code>index.html</code> file is in the root directory, which is two levels above the <code>module1.html</code> file.
+          </li>
+        </ul>
       </p>
     </div>
     <hr>
-    <h2>Exercise 1</h2>
+    <h2>Exercise 2</h2>
     <div>
       <p>
-        update the following anchor tag to point to the appropriate pages using Root Relative Paths: <br>
+        Update the following anchor tag to point to the appropriate pages using Document Relative Paths: <br>
         <br><br>
-        <a href="">Go to Assignment 1</a>
+        <a href="">Go to Module 1: Absolute File Path</a>
         <br><br>
-        <a href="">Go to Module 3: Document Relative Path</a>
+        <a href="">Go to About Page</a>
+        <br><br>
+        <a href="">Go to Home Page</a>
+        <br><br>
+        <a href="">Go to Lab 1</a>
+
       </p>
     </div>
-    
   </main>
 
   <!-- The footer section will be copied into all pages. -->
