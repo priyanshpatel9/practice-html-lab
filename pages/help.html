@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IT2040C - Practice Lab</title>
+</head>
+<body>
+  
+  <header>
+    <h1> <img src="/assets/images/html5-logo.png" alt="HTML5 Logo" height="80" > IT2040C - Practice Lab</h1>
+  </header>
+
+  <!-- The Nav section will be copied into all pages. We need to use the paths relative to the root -->
+  <nav>
+    <ul style="list-style: none; display: flex; gap: 20px; font-weight: 700; padding: 0;">
+      <li><a href="/index.html" style="text-decoration: none; color: #000;">Home</a></li>
+      <li><a href="/pages/about.html" style="text-decoration: none; color: #000;">About</a></li>
+      <li><a href="/pages/help.html" style="text-decoration: none; color: #000;">Help</a></li>
+      <li>
+        <span style="cursor: pointer;">Modules</span>
+        <ul style="list-style: none; padding: 0; margin: 0; display: none; position: absolute; background-color: #f1f1f1; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
+          <li><a href="/pages/modules/module1.html" style="text-decoration: none; color: #000; display: block; padding: 8px 16px;">Module 1</a></li>
+          <li><a href="/pages/modules/module2.html" style="text-decoration: none; color: #000; display: block; padding: 8px 16px;">Module 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <span style="cursor: pointer;">Assignments</span>
+        <ul style="list-style: none; padding: 0; margin: 0; display: none; position: absolute; background-color: #f1f1f1; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
+          <li><a href="/pages/assignments/lab1.html" style="text-decoration: none; color: #000; display: block; padding: 8px 16px;">Lab 1</a></li>
+          <li><a href="/pages/assignments/lab2.html" style="text-decoration: none; color: #000; display: block; padding: 8px 16px;">Lab 2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- This section is unique to every page -->
+  <main>
+    <h2>Help</h2>
+    <div>
+      <p></p>
+    </div>
+    
+  </main>
+
+  <!-- The footer section will be copied into all pages. -->
+  <footer style="position: fixed; bottom: 0; width: 100%; background-color: #f1f1f1; text-align: center; padding: 10px 0; margin-left: -8px;">
+    &copy; 2024 Yahya Gilany - IT2040C - Practice Lab
+  </footer>
+  <!-- You don't need to understand the content of this page (yet!) - This is what makes the menus with dropdowns -->
+  <script src="/assets/script.js"></script>
+</body>
+</html>
